@@ -15,7 +15,7 @@ vulkan-test: $(SRC_DIRS)/*.cpp $(SRC_DIRS)/*/*.cpp
 	cp $(SRC_DIRS)/shaders/*.spv $(BUILD_DIR)/shaders
 	rm $(SRC_DIRS)/shaders/*.spv
 
-	$(CC) $(CFLAGS) -o $(BUILD_DIR)/VulkanTest $(SRC_DIRS)/*.cpp $(SRC_DIRS)/*/*.cpp $(LDFLAGS)
+	time $(CC) $(CFLAGS) -o $(BUILD_DIR)/VulkanTest $(SRC_DIRS)/*.cpp $(SRC_DIRS)/*/*.cpp $(LDFLAGS)
 
 .PHONY: test clean shader
 
