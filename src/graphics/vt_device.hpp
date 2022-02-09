@@ -1,6 +1,6 @@
 #pragma once
 
-#include "vt_window.hpp"
+#include "../app/vt_window.hpp"
 
 // std lib headers
 #include <string>

@@ -2,7 +2,7 @@
 
 #include "vt_window.hpp"
 #include "../graphics/vt_pipeline.hpp"
-#include "vt_device.hpp"
+#include "../graphics/vt_device.hpp"
 
 namespace vt{
     class FirstApp{

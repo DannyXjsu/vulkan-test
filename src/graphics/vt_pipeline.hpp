@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../app/vt_device.hpp"
+#include "vt_device.hpp"
 
 #include <string>
 #include <vector>
@@ -8,7 +8,9 @@
 
 namespace vt{
 
-    struct PipelineConfigInfo {};
+    struct PipelineConfigInfo {
+        VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
+    };
 
     class VTPipeline {
 
